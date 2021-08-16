@@ -6,6 +6,44 @@
   box-sizing: content-box;
 }
 
+html,
 body {
+  height: 100%;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+section {
+  height: 100vh;
+  padding: 1em;
+}
+
+section > h2 {
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.center-items {
+  align-items: center;
+}
+
+#section-contact {
+  background-color: #3884df;
+}
+
+#section-home {
+  background-image: url(/imgs/bg.png);
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#section-about {
+  background-color: #3d5a80;
 }

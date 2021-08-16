@@ -1,0 +1,62 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:host {
+  width: 100%;
+  max-width: 500px;
+  max-height: 100vh;
+}
+
+.card-container {
+  background-color: white;
+  padding: 1em;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.card-info {
+  padding: 1em 0;
+}
+
+.card-info h2 {
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.card-info p {
+  color: lightslategray;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.card-icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.icon-link a {
+  color: #293241;
+  font-size: 1.25em;
+}
+
+.icon-link a:hover {
+  color: #3d5a80;
+}
