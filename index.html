@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/global-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/ProfileCard/ProfileCard.js" defer></script>
+    <script src="./js/InterestsTiles/InterestsTiles.js" defer></script>
 </head>
 
 <body>
@@ -19,6 +20,39 @@
             icons='{"linkedin":{"icon":"fab fa-linkedin","href":"https://www.linkedin.com/"}, "github":{"icon":"fab fa-github", "href":"https://github.com/OscarOK"}, "instagram":{"icon": "fab fa-instagram", "href": "https://www.instagram.com/"}, "email":{"icon":"fas fa-envelope", "href":"#section-contact"}}' ></profile-card>
         </div>
     </section>
+
+    <section id="section-about">
+        <h2>About Me</h2>
+
+        <div class="content">
+            <div class="presentation">
+                <h3>I'm Oscar Ordoñez</h3>
+                <p>I'm a computer science guy doing computer things. Right now working as a front-end developer within ServiceNow Platform. I'm currently looking for new web development experiences, and coffee shops. Also learning more about UX, and Interaction Design</p>
+            </div>
+            <div class="interests">
+                <h3>My interests</h3>
+
+                <interests-tiles tile-color="#fff" tile-bg-color="#334358" tiles='{"HCI": "fas fa-universal-access", "Front End": "fas fa-code", "Accessibility": "fas fa-sign-language", "Coffee":"fas fa-coffee", "Photography":"fas fa-camera"}'></interests-tiles>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="section-contact">
+        <h2>Contact</h2>
+
+        <div class="content">
+            <div style="background-color: green;">
+                <img src="./imgs/keep-in-touch.png">
+            </div>
+            <div style="background-color: blue;">
+                <form>
+                    <input type="text">
+                </form>
+
+            </div>
+
+        </div>
+    </section> -->
 </body>
 
 </html>

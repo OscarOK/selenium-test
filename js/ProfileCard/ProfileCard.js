@@ -51,7 +51,6 @@ class ProfileCard extends HTMLElement {
     cardIcons.setAttribute("class", "card-icons");
 
     const profileIcons = JSON.parse(getAttributeVal("icons"));
-    console.log(profileIcons);
 
     for (const icon in profileIcons) {
       const iconLink = document.createElement("div");
@@ -71,7 +70,6 @@ class ProfileCard extends HTMLElement {
     wrapper.appendChild(cardImg);
     wrapper.appendChild(cardInfo);
     wrapper.appendChild(cardIcons);
-    //wrapper.appendChild(name);
   }
 }
 
