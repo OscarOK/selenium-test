@@ -15,7 +15,8 @@ body {
 }
 
 section {
-  /* height: 100vh; */
+  /*height: 100vh;*/
+  height: fit-content;
   padding: 1em;
 }
 
@@ -63,6 +64,37 @@ section > h2 {
   flex-basis: 100%;
 }
 
+.contact-img {
+  display: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1em;
+  border-radius: 1%;
+  margin-bottom: 1em;
+  border: none;
+}
+
+.contact-form button {
+  padding: 0.5em;
+  border-radius: 1%;
+  border: none;
+  background-color: #293241;
+  color: white;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #3d5a80;
+  cursor: pointer;
+}
+
 @media (min-width: 1024px) {
   .presentation {
     flex-basis: 40%;
@@ -70,5 +102,9 @@ section > h2 {
 
   .interests {
     flex-basis: 40%;
+  }
+
+  .contact-img {
+    display: inline;
   }
 }
