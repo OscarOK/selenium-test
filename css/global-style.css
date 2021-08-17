@@ -15,8 +15,6 @@ body {
 }
 
 section {
-  /* min-height: 100vh;
-  height: fit-content; */
   padding: 1em;
   padding-top: 12vh;
 }
@@ -31,7 +29,7 @@ section > h2 {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .center-items {
