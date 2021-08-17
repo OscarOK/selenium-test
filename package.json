@@ -1,0 +1,30 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Please follow these steps to complete this exercise.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha test/test.js --timeout 100000",
+    "e2e": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorod97/interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorod97/interview/issues"
+  },
+  "homepage": "https://github.com/victorod97/interview#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "chromedriver": "^92.0.1",
+    "cypress": "^8.3.0",
+    "geckodriver": "^2.0.2",
+    "mocha": "^9.0.3"
+  }
+}
