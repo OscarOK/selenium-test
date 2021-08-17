@@ -5,15 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Oscar Ordoñez</title>
     <link rel="stylesheet" href="./css/global-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/ProfileCard/ProfileCard.js" defer></script>
     <script src="./js/InterestsTiles/InterestsTiles.js" defer></script>
     <script src="./js/ProjectCard/ProjectCard.js" defer></script>
+    
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#section-home">Home</a></li>
+                <li><a href="#section-about">About me</a></li>
+                <li><a href="#section-contact">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
     <section id="section-home">
         <div class="content center-items">
             <profile-card img="./imgs/oscar-profile.jpeg" 
@@ -28,12 +47,12 @@
         <div class="content">
             <div class="presentation">
                 <h3>I'm Oscar Ordoñez</h3>
-                <p>I'm a computer science guy doing computer things. Right now working as a front-end developer within ServiceNow Platform. I'm currently looking for new web development experiences, and coffee shops. Also learning more about UX, and Interaction Design</p>
+                <p>I'm a computer science guy doing computer things. Right now working as a front-end developer within ServiceNow Platform. I'm currently looking for new web development experiences, and coffee shops. Also learning more about UX, and Interaction Design.</p>
             </div>
             <div class="interests">
                 <h3>My interests</h3>
 
-                <interests-tiles tile-color="#fff" tile-bg-color="#334358" tiles='{"HCI": "fas fa-universal-access", "Front End": "fas fa-code", "Accessibility": "fas fa-sign-language", "Coffee":"fas fa-coffee", "Photography":"fas fa-camera"}'></interests-tiles>
+                <interests-tiles tile-color="#fff" tile-bg-color="#2a2f46" tiles='{"HCI": "fas fa-universal-access", "Front End": "fas fa-code", "Accessibility": "fas fa-sign-language", "Coffee":"fas fa-coffee", "Photography":"fas fa-camera"}'></interests-tiles>
             </div>
         </div>
     </section>
@@ -45,7 +64,7 @@
             <div class="contact-img">
                 <img src="./imgs/keep-in-touch.png">
             </div>
-            <div>
+            <div class="contact-form-container">
                 <form class="contact-form">
                     <input type="text" placeholder="Your Name">
                     <input type="text" placeholder="Your Email">
@@ -57,6 +76,7 @@
 
         </div>
     </section>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

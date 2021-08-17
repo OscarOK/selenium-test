@@ -15,14 +15,15 @@ body {
 }
 
 section {
-  height: 100vh;
-  height: fit-content;
+  /* min-height: 100vh;
+  height: fit-content; */
   padding: 1em;
+  padding-top: 12vh;
 }
 
 section > h2 {
   text-align: center;
-  padding-bottom: 1em;
+  padding-bottom: 2.5em;
 }
 
 .content {
@@ -38,7 +39,7 @@ section > h2 {
 }
 
 #section-contact {
-  background-color: #3884df;
+  background-color: #98c1d9;
 }
 
 #section-home {
@@ -68,6 +69,13 @@ section > h2 {
   display: none;
 }
 
+.contact-form-container {
+  padding: 1em;
+  border-radius: 1%;
+  background-color: #ee6c4d;
+  margin: auto 0;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -85,7 +93,7 @@ section > h2 {
   padding: 0.5em;
   border-radius: 1%;
   border: none;
-  background-color: #293241;
+  background-color: #2a2f46;
   color: white;
   font-weight: bold;
 }
@@ -95,7 +103,82 @@ section > h2 {
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(51, 52, 56);
+}
+
+.logo,
+.burger,
+.close-burger {
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0;
+  height: 90vh;
+  top: 10vh;
+  background-color: rgb(51, 52, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 0.75em;
+  padding: 1em;
+  border-radius: 1%;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: rgb(51, 52, 56);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    transform: none;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .presentation {
     flex-basis: 40%;
   }
@@ -106,5 +189,9 @@ section > h2 {
 
   .contact-img {
     display: inline;
+  }
+
+  .nav-links {
+    width: 35%;
   }
 }
