@@ -192,4 +192,15 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+### CypressIO ###
+# gitignore template for the CypressIO, browser test framework
+# website: https://www.cypress.io/
+
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
+
+# End of https://www.toptal.com/developers/gitignore/api/cypressio
+
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,node
